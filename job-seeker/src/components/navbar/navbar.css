@@ -1,0 +1,186 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: blueviolet;
+}
+
+.navbar-nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: black;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blueviolet;
+}
+
+.profile-logo {
+  display: flex;
+  align-items: center;
+}
+
+.profile-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 56px;
+    background-color: gainsboro;
+    height: 180px;
+    width: 40%;
+    z-index: 1;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav-container {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .profile-logo {
+    display: none;
+  }
+  
+  .navbar-toggler {
+    margin-left: auto;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+  
+  .profile-user {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .profile-logo {
+    display: none;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .profile-user {
+    width: 35px;
+    height: 35px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    top: 56px;
+    background-color: gainsboro;
+    height: 180px;
+    width: 30%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1239px) {
+  .navbar-nav {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .profile-logo {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+  }
+  
+  .profile-user {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .navbar-nav {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .profile-logo {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.3rem;
+  }
+  
+  .profile-user {
+    width: 40px;
+    height: 40px;
+  }
+}

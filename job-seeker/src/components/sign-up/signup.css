@@ -1,0 +1,133 @@
+.signup-form-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width:1500px ;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+}
+
+.form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  
+  background-color: blueviolet;
+  color: white;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.file-upload-download-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.file-upload {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.download-section {
+  flex-shrink: 0;
+}
+
+.download-link {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-link:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 576px) {
+  .signup-form {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .signup-form-container {
+    margin-top: 7px;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+  }
+
+  .btn-submit {
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .signup-form {
+    max-width: 80%;
+  }
+
+  .btn-submit {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 959px) {
+  .signup-form {
+    max-width: 75%;
+  }
+
+  .flex-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .signup-form {
+    max-width: 60%;
+  }
+
+  .btn-submit {
+    font-size: 1.2rem;
+  }
+}
